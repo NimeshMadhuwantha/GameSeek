@@ -30,8 +30,8 @@ templateColumns={{
     </GridItem>
   </Show>
   <GridItem area='main' >
-    <PlatformSelector onSelectPlatform={(platform)=> setSelectedPlatform(platform)}/>
-    <GameGrid selectedGenre={selectedGenre}/>
+    <PlatformSelector selectedPlatform={selectedPlatform} onSelectPlatform={(platform)=> setSelectedPlatform(platform)}/>
+    <GameGrid selectedPlatform={selectedPlatform} selectedGenre={selectedGenre}/>
     </GridItem>
 
 
